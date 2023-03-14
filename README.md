@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [here](https://github.com/Chanda-Abdul/Random-Advice-Generator)
-- Live Site URL: [here](https://your-live-site-url.com)
+- Live Site URL: [here](https://shimmering-stroopwafel-f6a400.netlify.app/)
 
 ## My process
 
