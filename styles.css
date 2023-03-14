@@ -1,0 +1,134 @@
+@import url(https://fonts.bunny.net/css?family=manrope:800);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+}
+
+:root {
+  --primary-light-cyan: hsl(193, 38%, 86%);
+  --primary-neon-green: hsl(150, 100%, 66%);
+  --neutral-grayish-blue: hsl(217, 19%, 38%);
+  --neutral-dark-grayish-blue: hsl(217, 19%, 24%);
+  --neutral-dark-blue: hsl(218, 23%, 16%);
+  --box-shadow-brown: rgba(0, 0, 0, 0.100202);
+  --link-purpleish-blue: hsl(228, 45%, 44%);
+}
+
+body {
+  font-size: 28px;
+  background-color: var(--neutral-dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+h1,
+h2 {
+  color: var(--primary-neon-green);
+}
+h1 {
+  font-size: 2rem;
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h2 {
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 15px;
+  letter-spacing: 3.4571425914764404px;
+  margin-top: 40px;
+}
+
+p {
+  margin: 24px 24px 16px 24px;
+  color: var(--primary-light-cyan);
+  line-height: 38px;
+  letter-spacing: -0.30000001192092896px;
+}
+
+.container {
+  height: 100%;
+}
+
+.container,
+.advice-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advice-container {
+  background-color: var(--neutral-dark-grayish-blue);
+  min-height: 332px;
+  justify-content: space-between;
+  max-height: fit-content;
+  width: 343px;
+  box-shadow: 30px 50px 80px var(--neutral-dark-blue);
+  border-radius: 10px;
+}
+.divider {
+  background-image: url('/images/pattern-divider-mobile.svg');
+  width: 295px;
+  height: 16px;
+  margin-bottom: 64px;
+}
+
+button {
+  background-color: var(--primary-neon-green);
+  position: relative;
+  height: 64px;
+  width: 64px;
+  border-radius: 2rem;
+  top: -32px;
+}
+
+button:hover {
+  box-shadow: 0px 0px 40px var(--primary-neon-green);
+}
+.attribution {
+  margin-top: auto;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 0.25rem;
+}
+
+.attribution a {
+  color: white;
+}
+.attribution a:visited {
+  color: var(--link-purpleish-blue);
+}
+
+.attribution a:hover {
+  color: var(--primary-neon-green);
+}
+
+@media (min-width: 768px) {
+  h1 {
+    margin-top: 90px;
+  }
+  .advice-container {
+    width: 540px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .divider {
+    background-image: url('/images/pattern-divider-desktop.svg');
+    height: 16px;
+    width: 444px;
+    margin: 64px auto;
+  }
+}
